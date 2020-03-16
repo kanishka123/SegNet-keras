@@ -6,6 +6,10 @@ from custom_layers import MaxPoolingWithIndices,UpSamplingWithIndices,CompositeC
 import config as cf
 from util import read_image_batch
 from create_model import create_model
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
+
 
 def main(args):
     my_model=create_model()
